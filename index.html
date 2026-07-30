@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d1f35">
+    <meta
+      name="description"
+      content="Comet Vault Nebulas: propuesta interactiva estática para orientar, sostener y custodiar ideas sin activarlas."
+    >
+    <title>Comet Vault Nebulas · v0.3.0-rc1 patch 1</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a
+      class="skip-link"
+      href="#idea-nebula"
+      data-en="Skip to the idea nebula"
+      data-es="Saltar a la nebulosa de ideas"
+    >Saltar a la nebulosa de ideas</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="#top" aria-label="Comet Vault Nebulas">
+        <span class="brand-orbit" aria-hidden="true">
+          <span class="brand-core">C</span>
+        </span>
+        <span class="brand-copy">
+          <strong>COMET VAULT</strong>
+          <span>IRIDISCENTER · NEBULAS</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#idea-nebula" data-en="Nebula" data-es="Nebulosa">Nebulosa</a>
+        <a href="#boundaries" data-en="Boundaries" data-es="Fronteras">Fronteras</a>
+        <a href="#governance" data-en="Governance" data-es="Gobernanza">Gobernanza</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="release-state" data-en="RC1 · PATCH 1 · HOLD" data-es="RC1 · PARCHE 1 · HOLD">
+          RC1 · PARCHE 1 · HOLD
+        </span>
+        <div class="language-switch" role="group" aria-label="Selector de idioma">
+          <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button class="language-button is-active" type="button" data-lang="es" aria-pressed="true">ES</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="nebula-canvas" aria-hidden="true"></canvas>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="signal-dot" aria-hidden="true"></span>
+            <span
+              data-en="Level 1 · Orientation & inventory"
+              data-es="Nivel 1 · Orientación e inventario"
+            >Nivel 1 · Orientación e inventario</span>
+          </div>
+
+          <h1 id="hero-title">
+            <span>Comet Vault</span>
+            <em data-en="A place where ideas can rest." data-es="Un lugar donde las ideas pueden descansar.">
+              Un lugar donde las ideas pueden descansar.
+            </em>
+          </h1>
+
+          <p
+            class="hero-intro"
+            data-en="Extract, name, and hold what matters—without turning every spark into a task."
+            data-es="Extrae, nombra y sostiene lo importante, sin convertir cada destello en una tarea."
+          >
+            Extrae, nombra y sostiene lo importante, sin convertir cada destello en una tarea.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#idea-nebula">
+              <span data-en="Enter the nebula" data-es="Entrar a la nebulosa">Entrar a la nebulosa</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <button class="button button-ghost" type="button" data-open-rail>
+              <span data-en="Read source state" data-es="Leer estado de fuentes">Leer estado de fuentes</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-axiom" role="note" aria-label="Operating axiom">
+          <span class="axiom-index">00</span>
+          <p
+            data-en="Nothing here is active. Nothing here is a task."
+            data-es="Nada aquí está activo. Nada aquí es una tarea."
+          >
+            Nada aquí está activo. Nada aquí es una tarea.
+          </p>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>SCROLL</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="orientation-section" aria-labelledby="orientation-title">
+        <div class="section-marker">01 / ORIENT</div>
+        <div class="orientation-layout">
+          <div class="section-intro">
+            <p class="eyebrow" data-en="How to read this vault" data-es="Cómo leer esta bóveda">
+              Cómo leer esta bóveda
+            </p>
+            <h2 id="orientation-title">
+              <span data-en="Cognitive relief," data-es="Alivio cognitivo,">Alivio cognitivo,</span>
+              <em data-en="not another backlog." data-es="no otro backlog.">no otro backlog.</em>
+            </h2>
+          </div>
+
+          <div class="orientation-copy">
+            <p class="dropcap" data-en="Every comet is an idea, artifact, or system fragment already mentioned. This surface helps you see the field without demanding that you solve it."
+              data-es="Cada cometa es una idea, artefacto o fragmento de sistema ya mencionado. Esta superficie permite ver el campo sin exigir que lo resuelvas.">
+              Cada cometa es una idea, artefacto o fragmento de sistema ya mencionado. Esta superficie permite ver el campo sin exigir que lo resuelvas.
+            </p>
+            <div class="principle-list">
+              <div>
+                <span>01</span>
+                <p data-en="Items leave only when explicitly summoned." data-es="Los elementos salen sólo cuando son convocados explícitamente.">
+                  Los elementos salen sólo cuando son convocados explícitamente.
+                </p>
+              </div>
+              <div>
+                <span>02</span>
+                <p data-en="Orientation does not imply priority or sequence." data-es="Orientar no implica prioridad ni secuencia.">
+                  Orientar no implica prioridad ni secuencia.
+                </p>
+              </div>
+              <div>
+                <span>03</span>
+                <p data-en="Source state travels with every claim." data-es="El estado de fuente acompaña cada afirmación.">
+                  El estado de fuente acompaña cada afirmación.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nebula-section" id="idea-nebula" aria-labelledby="nebula-title">
+        <div class="section-marker section-marker-light">02 / HOLD</div>
+
+        <div class="nebula-heading">
+          <div>
+            <p class="eyebrow" data-en="Idea Nebula" data-es="Nebulosa de ideas">Nebulosa de ideas</p>
+            <h2 id="nebula-title" data-en="Seven clusters. Zero pressure." data-es="Siete clústeres. Cero presión.">
+              Siete clústeres. Cero presión.
+            </h2>
+          </div>
+          <p
+            data-en="Select a cluster to inspect its orbit. Selection is observation only."
+            data-es="Selecciona un clúster para inspeccionar su órbita. Seleccionar es sólo observar."
+          >
+            Selecciona un clúster para inspeccionar su órbita. Seleccionar es sólo observar.
+          </p>
+        </div>
+
+        <div class="constellation-layout">
+          <div class="cluster-index" role="group" aria-label="Comet clusters">
+            <button class="cluster-button is-active" type="button" data-cluster="A" aria-pressed="true">
+              <span>A</span>
+              <strong data-en="Core & governance" data-es="Núcleo y gobernanza">Núcleo y gobernanza</strong>
+              <small data-en="5 comets" data-es="5 cometas">5 cometas</small>
+            </button>
+            <button class="cluster-button" type="button" data-cluster="B" aria-pressed="false">
+              <span>B</span>
+              <strong data-en="Identity & symbols" data-es="Identidad y símbolos">Identidad y símbolos</strong>
+              <small data-en="5 comets" data-es="5 cometas">5 cometas</small>
+            </button>
+            <button class="cluster-button" type="button" data-cluster="C" aria-pressed="false">
+              <span>C</span>
+              <strong data-en="Learning systems" data-es="Sistemas de aprendizaje">Sistemas de aprendizaje</strong>
+              <small data-en="6 comets" data-es="6 cometas">6 cometas</small>
+            </button>
+            <button class="cluster-button" type="button" data-cluster="D" aria-pressed="false">
+              <span>D</span>
+              <strong data-en="Orientation assets" data-es="Activos de orientación">Activos de orientación</strong>
+              <small data-en="5 comets" data-es="5 cometas">5 cometas</small>
+            </button>
+            <button class="cluster-button" type="button" data-cluster="E" aria-pressed="false">
+              <span>E</span>
+              <strong data-en="Narrative & spirit" data-es="Narrativa y espíritu">Narrativa y espíritu</strong>
+              <small data-en="4 comets" data-es="4 cometas">4 cometas</small>
+            </button>
+            <button class="cluster-button" type="button" data-cluster="F" aria-pressed="false">
+              <span>F</span>
+              <strong data-en="Digital assets" data-es="Activos digitales">Activos digitales</strong>
+              <small data-en="5 comets" data-es="5 cometas">5 cometas</small>
+            </button>
+            <button class="cluster-button" type="button" data-cluster="G" aria-pressed="false">
+              <span>G</span>
+              <strong data-en="Process & projects" data-es="Procesos y proyectos">Procesos y proyectos</strong>
+              <small data-en="4 comets" data-es="4 cometas">4 cometas</small>
+            </button>
+          </div>
+
+          <div class="cluster-stage" data-cluster-stage>
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="orbit orbit-three" aria-hidden="true"></div>
+            <div class="stage-star star-one" aria-hidden="true"></div>
+            <div class="stage-star star-two" aria-hidden="true"></div>
+            <div class="stage-star star-three" aria-hidden="true"></div>
+
+            <article class="cluster-detail" aria-live="polite">
+              <div class="cluster-detail-head">
+                <span class="cluster-glyph" id="cluster-glyph">A</span>
+                <div>
+                  <p id="cluster-super" class="detail-super">COMET CLUSTER A</p>
+                  <h3 id="cluster-title">Núcleo y gobernanza</h3>
+                </div>
+              </div>
+              <p id="cluster-description" class="cluster-description">
+                Arquitectura generativa, separación de niveles y memoria viva del sistema.
+              </p>
+              <ul id="cluster-items" class="comet-list"></ul>
+              <footer class="cluster-detail-foot">
+                <span>
+                  <i class="status-light"></i>
+                  <b data-en="STATE" data-es="ESTADO">ESTADO</b>
+                  <strong data-en="HOLD · NOT ACTIVE" data-es="HOLD · NO ACTIVO">HOLD · NO ACTIVO</strong>
+                </span>
+                <button type="button" data-open-rail>
+                  <span data-en="Trace source" data-es="Rastrear fuente">Rastrear fuente</span>
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lenses-section" aria-labelledby="lenses-title">
+        <div class="section-marker">03 / LENSES</div>
+        <div class="lenses-heading">
+          <div>
+            <p class="eyebrow" data-en="One vault, three lenses" data-es="Una bóveda, tres lentes">
+              Una bóveda, tres lentes
+            </p>
+            <h2 id="lenses-title" data-en="Change the view, not the truth state." data-es="Cambia la vista, no el estado de verdad.">
+              Cambia la vista, no el estado de verdad.
+            </h2>
+          </div>
+          <div class="mode-current" aria-live="polite">
+            <span data-en="CURRENT LENS" data-es="LENTE ACTUAL">LENTE ACTUAL</span>
+            <strong id="current-mode-title">Bóveda editorial</strong>
+          </div>
+        </div>
+
+        <div class="mode-grid" role="group" aria-label="Vault lens selector">
+          <button class="mode-card is-active" type="button" data-mode="editorial" aria-pressed="true">
+            <span class="mode-index">01</span>
+            <span class="mode-orb mode-orb-editorial" aria-hidden="true"></span>
+            <strong data-en="Editorial Vault" data-es="Bóveda editorial">Bóveda editorial</strong>
+            <span class="mode-description" data-en="Archive, source boundaries, and structured handoff."
+              data-es="Archivo, fronteras de fuente y handoff estructurado.">
+              Archivo, fronteras de fuente y handoff estructurado.
+            </span>
+          </button>
+          <button class="mode-card" type="button" data-mode="lab" aria-pressed="false">
+            <span class="mode-index">02</span>
+            <span class="mode-orb mode-orb-lab" aria-hidden="true"></span>
+            <strong data-en="Glassy Bokeh Lab" data-es="Laboratorio bokeh glass">Laboratorio bokeh glass</strong>
+            <span class="mode-description" data-en="Visual experiments, motion, and interaction studies."
+              data-es="Experimentos visuales, movimiento y estudios de interacción.">
+              Experimentos visuales, movimiento y estudios de interacción.
+            </span>
+          </button>
+          <button class="mode-card" type="button" data-mode="dashboard" aria-pressed="false">
+            <span class="mode-index">03</span>
+            <span class="mode-orb mode-orb-dashboard" aria-hidden="true"></span>
+            <strong data-en="Creative Archive" data-es="Archivo creativo">Archivo creativo</strong>
+            <span class="mode-description" data-en="Candidates, modules, and review readiness—without automatic promotion."
+              data-es="Candidatos, módulos y preparación para revisión, sin promoción automática.">
+              Candidatos, módulos y preparación para revisión, sin promoción automática.
+            </span>
+          </button>
+        </div>
+
+        <div class="mode-readout">
+          <p id="current-mode-copy">Archivo, fronteras de fuente y handoff estructurado.</p>
+          <span>
+            <b data-en="RECOMMENDED NEXT" data-es="SIGUIENTE RECOMENDADO">SIGUIENTE RECOMENDADO</b>
+            <strong id="recommended-action">Revisar fronteras antes de expandir contenido.</strong>
+          </span>
+        </div>
+      </section>
+
+      <section class="boundaries-section" id="boundaries" aria-labelledby="boundaries-title">
+        <div class="section-marker section-marker-light">04 / BOUNDARY</div>
+        <div class="boundary-intro">
+          <p class="eyebrow" data-en="Dual-system boundary" data-es="Frontera del sistema dual">
+            Frontera del sistema dual
+          </p>
+          <h2 id="boundaries-title">
+            <span data-en="The internal vault can hold uncertainty." data-es="La bóveda interna puede sostener incertidumbre.">
+              La bóveda interna puede sostener incertidumbre.
+            </span>
+            <em data-en="The public surface cannot inherit it automatically." data-es="La superficie pública no puede heredarla automáticamente.">
+              La superficie pública no puede heredarla automáticamente.
+            </em>
+          </h2>
+        </div>
+
+        <div class="boundary-flow">
+          <article class="surface-card surface-internal">
+            <span class="surface-number">I</span>
+            <div>
+              <p class="surface-label" data-en="INTERNAL SURFACE" data-es="SUPERFICIE INTERNA">SUPERFICIE INTERNA</p>
+              <h3 data-en="Explore & hold" data-es="Explorar y sostener">Explorar y sostener</h3>
+              <ul>
+                <li data-en="Candidates and UNKNOWN" data-es="Candidatos y UNKNOWN">Candidatos y UNKNOWN</li>
+                <li data-en="Conflicts and source boundaries" data-es="Conflictos y fronteras de fuente">Conflictos y fronteras de fuente</li>
+                <li data-en="QA and D decisions" data-es="QA y decisiones D">QA y decisiones D</li>
+              </ul>
+            </div>
+            <span class="surface-state" data-en="CURRENT: CANDIDATE" data-es="ACTUAL: CANDIDATO">ACTUAL: CANDIDATO</span>
+          </article>
+
+          <div class="promotion-gate" role="group" aria-label="Promotion gate">
+            <span class="gate-line"></span>
+            <div class="gate-seal">
+              <b>D</b>
+              <small data-en="REVIEW" data-es="REVISIÓN">REVISIÓN</small>
+            </div>
+            <p>INTERNAL_CANDIDATE<br>→ D_REVIEW →<br>ACCEPTED_PUBLIC_PROJECTION</p>
+            <strong data-en="NO AUTOMATIC SYNC" data-es="SIN SYNC AUTOMÁTICO">SIN SYNC AUTOMÁTICO</strong>
+          </div>
+
+          <article class="surface-card surface-public">
+            <span class="surface-number">P</span>
+            <div>
+              <p class="surface-label" data-en="PUBLIC SURFACE" data-es="SUPERFICIE PÚBLICA">SUPERFICIE PÚBLICA</p>
+              <h3 data-en="Read approved evidence" data-es="Leer evidencia aprobada">Leer evidencia aprobada</h3>
+              <ul>
+                <li data-en="Accepted claims only" data-es="Sólo afirmaciones aceptadas">Sólo afirmaciones aceptadas</li>
+                <li data-en="Reader-facing provenance" data-es="Procedencia para lectores">Procedencia para lectores</li>
+                <li data-en="Versioned projection" data-es="Proyección versionada">Proyección versionada</li>
+              </ul>
+            </div>
+            <span class="surface-state is-locked" data-en="LOCKED · NOT PUBLISHED" data-es="CERRADO · NO PUBLICADO">
+              CERRADO · NO PUBLICADO
+            </span>
+          </article>
+        </div>
+      </section>
+
+      <section class="governance-section" id="governance" aria-labelledby="governance-title">
+        <div class="section-marker">05 / GOVERN</div>
+        <div class="governance-layout">
+          <div class="governance-copy">
+            <p class="eyebrow" data-en="Exit paths" data-es="Rutas de salida">Rutas de salida</p>
+            <h2 id="governance-title" data-en="Leaving untouched is a valid decision." data-es="Dejar intacto también es una decisión válida.">
+              Dejar intacto también es una decisión válida.
+            </h2>
+            <p
+              data-en="These controls preview governance consequences. They do not mutate the vault."
+              data-es="Estos controles anticipan consecuencias de gobernanza. No modifican la bóveda."
+            >
+              Estos controles anticipan consecuencias de gobernanza. No modifican la bóveda.
+            </p>
+
+            <div class="exit-options" role="group" aria-label="Exit-path preview">
+              <button type="button" data-exit="activate">
+                <span>01</span>
+                <span class="exit-copy">
+                  <strong data-en="Activate one comet" data-es="Activar un cometa">Activar un cometa</strong>
+                  <small data-en="Requires explicit summons" data-es="Requiere convocatoria explícita">
+                    Requiere convocatoria explícita
+                  </small>
+                </span>
+                <i aria-hidden="true">↗</i>
+              </button>
+              <button type="button" data-exit="production">
+                <span>02</span>
+                <span class="exit-copy">
+                  <strong data-en="Define a Production Set" data-es="Definir un Production Set">Definir un Production Set</strong>
+                  <small data-en="Opens a separate Level 2 canvas" data-es="Abre un canvas Nivel 2 separado">
+                    Abre un canvas Nivel 2 separado
+                  </small>
+                </span>
+                <i aria-hidden="true">↗</i>
+              </button>
+              <button class="is-recommended" type="button" data-exit="rest">
+                <span>03</span>
+                <span class="exit-copy">
+                  <strong data-en="Leave the vault untouched" data-es="Dejar la bóveda intacta">Dejar la bóveda intacta</strong>
+                  <small data-en="Valid · recommended under load" data-es="Válido · recomendado bajo carga">
+                    Válido · recomendado bajo carga
+                  </small>
+                </span>
+                <i aria-hidden="true">✓</i>
+              </button>
+            </div>
+          </div>
+
+          <aside class="governance-console" aria-label="Dry-run governance console">
+            <div class="console-head">
+              <span class="console-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>DRY-RUN / DOMAIN ADAPTER</span>
+              <b>v0.3.0-rc1</b>
+            </div>
+            <div class="console-body">
+              <p><span>mode</span><strong>dry-run</strong></p>
+              <p><span>execution_state</span><strong class="status-hold">HOLD</strong></p>
+              <p><span>truth_state</span><strong>SCAFFOLD_ONLY</strong></p>
+              <p><span>schema</span><strong class="status-warn">UNVERIFIED</strong></p>
+              <p><span>baseline</span><strong class="status-pass">HASH MATCHED</strong></p>
+              <p><span>github_publication</span><strong>NOT_PUBLISHED</strong></p>
+              <p><span>canon_declared</span><strong>false</strong></p>
+            </div>
+            <div class="console-message" aria-live="polite">
+              <span data-en="PREVIEW" data-es="VISTA PREVIA">VISTA PREVIA</span>
+              <p id="exit-message" data-en="The vault remains untouched. No mutation was requested."
+                data-es="La bóveda permanece intacta. No se solicitó ninguna mutación.">
+                La bóveda permanece intacta. No se solicitó ninguna mutación.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="capsules-section" aria-labelledby="capsules-title">
+        <div class="section-marker">06 / ORBIT</div>
+        <div class="capsules-heading">
+          <div>
+            <p class="eyebrow" data-en="Contained candidates" data-es="Candidatos contenidos">Candidatos contenidos</p>
+            <h2 id="capsules-title" data-en="Present, bounded, not installed." data-es="Presentes, delimitados, no instalados.">
+              Presentes, delimitados, no instalados.
+            </h2>
+          </div>
+          <p
+            data-en="Reported in the handoff; physical RC1 files remain unmounted."
+            data-es="Reportados en el handoff; los archivos físicos RC1 siguen sin montar."
+          >
+            Reportados en el handoff; los archivos físicos RC1 siguen sin montar.
+          </p>
+        </div>
+
+        <div class="capsule-grid">
+          <article class="capsule-card">
+            <span class="capsule-symbol">MV</span>
+            <small>SKILL CANDIDATE</small>
+            <h3>mapa-de-voz</h3>
+            <p>React + Recharts</p>
+            <footer><span data-en="COMPLETE CANDIDATE" data-es="CANDIDATO COMPLETO">CANDIDATO COMPLETO</span><b>NOT INSTALLED</b></footer>
+          </article>
+          <article class="capsule-card">
+            <span class="capsule-symbol">HK</span>
+            <small>RAW CANDIDATE</small>
+            <h3>claude-handoff-kernel</h3>
+            <p>HANDOFF_KERNEL_v1.0.0.md</p>
+            <footer><span data-en="VERIFIED DELTA REPORTED" data-es="DELTA VERIFICADA REPORTADA">DELTA VERIFICADA REPORTADA</span><b>UNMOUNTED</b></footer>
+          </article>
+          <article class="capsule-card">
+            <span class="capsule-symbol">SM</span>
+            <small>MANIFEST DRAFT</small>
+            <h3>iridiscenter-skill-manifest-v2</h3>
+            <p>Governance candidate</p>
+            <footer><span data-en="APPROVAL PENDING" data-es="APROBACIÓN PENDIENTE">APROBACIÓN PENDIENTE</span><b>UNMOUNTED</b></footer>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="footer-mark">C</span>
+        <p><strong>Comet Vault Nebulas</strong><br>Iridiscenter · Level 1 Orientation</p>
+      </div>
+      <p
+        data-en="This interface is a stabilizer, not a mandate."
+        data-es="Esta interfaz es un estabilizador, no un mandato."
+      >Esta interfaz es un estabilizador, no un mandato.</p>
+      <div class="footer-meta">
+        <span>v0.3.0-rc1-patch-1</span>
+        <span>STATIC · EN/ES · NO RUNTIME</span>
+      </div>
+    </footer>
+
+    <aside class="provenance-rail" data-provenance-rail inert aria-hidden="true" aria-labelledby="rail-title">
+      <div class="rail-head">
+        <div>
+          <p>PROVENANCE RAIL</p>
+          <h2 id="rail-title" data-en="Source state" data-es="Estado de fuentes">Estado de fuentes</h2>
+        </div>
+        <button
+          type="button"
+          data-close-rail
+          data-aria-en="Close provenance rail"
+          data-aria-es="Cerrar riel de procedencia"
+          aria-label="Cerrar riel de procedencia"
+        >×</button>
+      </div>
+      <div class="rail-body">
+        <article>
+          <span class="source-id">SRC-002</span>
+          <h3>v0.2.2 baseline</h3>
+          <p>comet-vault-ui-handoff-v0.2.2-nidus-gem-container-request.zip</p>
+          <dl>
+            <div><dt>STATE</dt><dd>EVIDENCE_PHYSICAL_VERIFIED</dd></div>
+            <div><dt>SHA-256</dt><dd>ae203601…db855577</dd></div>
+            <div><dt>RESULT</dt><dd class="status-pass">MATCHED</dd></div>
+          </dl>
+        </article>
+        <article>
+          <span class="source-id">SRC-003</span>
+          <h3>Idea Nebula</h3>
+          <p>iridiscenter_comet_vault_idea_nebula.md</p>
+          <dl>
+            <div><dt>STATE</dt><dd>EVIDENCE_PHYSICAL_VERIFIED</dd></div>
+            <div><dt>SHA-256</dt><dd>e071a299…bc1d71b8d</dd></div>
+            <div><dt>SCOPE</dt><dd>LEVEL 1 · ORIENT/HOLD</dd></div>
+          </dl>
+        </article>
+        <article>
+          <span class="source-id">SRC-001 / 004</span>
+          <h3>RC1 handoff + authorization</h3>
+          <p data-en="Instruction and provisional record only." data-es="Instrucción y registro provisional solamente.">
+            Instrucción y registro provisional solamente.
+          </p>
+          <dl>
+            <div><dt>DRY-RUN</dt><dd class="status-pass">AUTHORIZED</dd></div>
+            <div><dt>MERGE</dt><dd>NOT AUTHORIZED</dd></div>
+            <div><dt>CANON</dt><dd>false</dd></div>
+          </dl>
+        </article>
+        <article>
+          <span class="source-id">D-DECISION-20260730-COMET-VAULT-01</span>
+          <h3>Interactive proposal gate</h3>
+          <p
+            data-en="The source proposal was accepted as a static candidate. Patch 1 remains a separate review delta."
+            data-es="La propuesta fuente fue aceptada como candidata estática. El parche 1 permanece como delta de revisión separada."
+          >
+            La propuesta fuente fue aceptada como candidata estática. El parche 1 permanece como delta de revisión separada.
+          </p>
+          <dl>
+            <div><dt>SOURCE</dt><dd class="status-pass">ACCEPT</dd></div>
+            <div><dt>PATCH 1</dt><dd class="status-warn">REVIEW_PENDING</dd></div>
+            <div><dt>MERGE</dt><dd>NOT AUTHORIZED</dd></div>
+          </dl>
+        </article>
+        <article class="source-missing">
+          <span class="source-id">SRC-006</span>
+          <h3>RC1 physical package</h3>
+          <p data-en="Package, registries, decision log, matrix, and release delta."
+            data-es="Paquete, registros, decision log, matriz y release delta.">
+            Paquete, registros, decision log, matriz y release delta.
+          </p>
+          <dl>
+            <div><dt>STATE</dt><dd class="status-warn">UNKNOWN_NOT_MOUNTED</dd></div>
+          </dl>
+        </article>
+      </div>
+      <footer class="rail-foot">
+        <strong
+          data-en="SOURCE GATE: ACCEPT · PATCH 1 REVIEW"
+          data-es="GATE DE FUENTE: ACCEPT · REVISIÓN PARCHE 1"
+        >GATE DE FUENTE: ACCEPT · REVISIÓN PARCHE 1</strong>
+        <span>NO MERGE · NO RUNTIME</span>
+      </footer>
+    </aside>
+    <button
+      class="rail-scrim"
+      type="button"
+      data-close-rail
+      data-aria-en="Close provenance rail"
+      data-aria-es="Cerrar riel de procedencia"
+      aria-label="Cerrar riel de procedencia"
+    ></button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
