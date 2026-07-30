@@ -1,0 +1,29 @@
+{
+  "artifact": "comet-vault-nebulas · local rebuild",
+  "generated_by": "Claude · this conversation turn",
+  "generated_at": "2026-07-30",
+  "package_state": "LOCAL_DRAFT_CANDIDATE",
+  "baseline_used": "NOT_A_REAL_BASELINE — the referenced v0.2.2/v0.3.0-rc1 zip and docx were listed in <uploaded_files> but were not actually present in this session; only /mnt/project reference docs (IRIDISCENTER script, viewer.html template, Luminal Covenant philosophy, Manifiesto Transmedia) were available",
+  "aesthetic_sources": [
+    "luminal_covenant_philosophy.md — jittered tessellation, shimmer, Oro Sutil #BFA06A, 60/40 whitespace",
+    "Manifiesto Transmedia IRID-OPAL — tribe palette, vitraux/glass motif, museum-grade minimalism",
+    "conversation log description of Comet Vault Nebulas v0.3.0-rc1-proposal aesthetic (dark navy/gold, orbital nebula, 7 clusters, EN/ES, provenance rail)"
+  ],
+  "ai_studio_reference": "NOT_ACCESSED — https://ai.studio/apps/bundled/research_visualization requires Google auth; not fetched this turn",
+  "github_state": {
+    "repository": "iridiscenterinc/comet-vault-nebulas",
+    "connector_active": false,
+    "commit_performed": false,
+    "publish_performed": false,
+    "note": "No GitHub connector is active in this chat. Nothing was pushed, merged, or read from the live repo."
+  },
+  "contents": {
+    "index.html": "self-contained interactive artifact — nebula canvas, 7 clusters, detail overlay, provenance rail, EN/ES toggle, jittered-tessellation shimmer backdrop"
+  },
+  "governance": {
+    "canon_declared": false,
+    "D_decision": "NOT_APPLICABLE — this is a fresh local build, not a re-review of a prior D-approved package",
+    "runtime_deployment": "NOT_STARTED",
+    "recommended_next_step": "Review index.html visually. If it fits, copy it into your actual repo checkout yourself (I can't write to GitHub from here) and run it through your normal D gate."
+  }
+}
