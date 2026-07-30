@@ -1,0 +1,183 @@
+schema_version: "0.1-draft"
+adapter_id: "comet-vault-nebulas-domain-adapter-v0.3.0-rc1-dry-run"
+generated_at: "2026-07-30T00:00:00-06:00"
+project: "comet-vault-nebulas"
+target_release: "0.3.0-rc1"
+
+status:
+  packet_state: "DRAFT_FOR_REVIEW"
+  truth_state: "SCAFFOLD_ONLY"
+  execution_mode: "dry-run"
+  execution_state: "HOLD"
+  package_state_reported: "release_candidate"
+  deploy_ready_meaning: "static_candidate_ready_for_review"
+  schema_compatibility: "UNVERIFIED"
+  source_completeness: "PARTIAL"
+  visual_qa: "UNVERIFIED_BROWSER_POLICY_BLOCK"
+  canon_declared: false
+  mutation_performed: false
+
+authority:
+  approval_input: "User authorized the explicit next action on 2026-07-30."
+  authorized_action: "generate_and_review_domain_adapter_yaml_as_separate_delta"
+  authorized_effect:
+    - "create candidate adapter"
+    - "run static review"
+    - "return candidate to D"
+  not_authorized:
+    - "merge"
+    - "install skills"
+    - "commit neutral skills array"
+    - "publish to GitHub"
+    - "deploy runtime"
+    - "declare canon"
+
+visual_proposal:
+  id: "comet-vault-nebulas-v0.3.0-rc1-proposal"
+  state: "INTERACTIVE_STATIC_CANDIDATE"
+  architecture: "html_css_vanilla_javascript"
+  dependencies_added: false
+  content_source: "SRC-003"
+  style_reference: "SRC-005"
+  style_reference_boundary:
+    included:
+      - "immersive full-screen composition"
+      - "editorial hierarchy"
+      - "interactive explanatory visualization"
+      - "light-dark narrative rhythm"
+      - "restrained gold accent"
+      - "orchestrated motion"
+    excluded:
+      - "AlphaQubit content and data"
+      - "React and TypeScript code"
+      - "Three.js and animation libraries"
+      - "environment configuration"
+      - "API keys"
+  publication_state: "NOT_PUBLISHED"
+  runtime_state: "NOT_STARTED"
+  canon_declared: false
+
+baseline:
+  version: "0.2.2-nidus-gem-container-request"
+  sha256: "ae20360198615cd57f75ab9a48614d97badfd212c3702b5fa1b62db1db855577"
+  physical_verification: "MATCHED_INSPECTED_ATTACHMENT"
+  rollback:
+    method: "re-extract the recorded v0.2.2 baseline"
+    destructive_action_required: false
+
+domain:
+  name: "Iridiscenter · Comet Vault"
+  function: "orienting_and_holding"
+  purpose: "Safely extract, park, and name relevant ideas without activating, resolving, prioritizing, sequencing, or expanding them."
+  operating_principles:
+    - "nothing_in_the_vault_is_a_task"
+    - "nothing_in_the_vault_is_active"
+    - "items_leave_only_when_explicitly_summoned"
+    - "cognitive_load_reduction"
+    - "source_boundaries_preserved"
+
+level_map:
+  - level: 1
+    function: "orient"
+    declared_source: "docs/intake/idea-nebula.md"
+    inspected_equivalent:
+      file: "iridiscenter_comet_vault_idea_nebula.md"
+      sha256: "e071a2994286e0143652f6320ffe05f0203b88c6b1eabee44db3bb5bc1d71b8d"
+      state: "EVIDENCE_PHYSICAL_VERIFIED"
+    source_path_match: "UNVERIFIED"
+  - level: 2
+    function: "enable"
+    declared_source: "docs/enablement/SYS_N02-Learning-Enablement-Framework.md"
+    state: "UNKNOWN_NOT_MOUNTED"
+  - level: 3
+    function: "hold"
+    declared_source: "docs/intake/level-3-idea-vault.md"
+    state: "UNKNOWN_NOT_MOUNTED"
+
+candidate_modules:
+  - id: "mapa-de-voz"
+    declared_path: "intake/skill-candidates/mapa-de-voz"
+    reported_state: "complete_candidate_not_installed"
+    runtime: "react_plus_recharts"
+    inspected_state: "UNKNOWN_NOT_MOUNTED"
+    allowed_transition: "review_only"
+  - id: "claude-handoff-kernel"
+    declared_path: "handoff/raw-candidates/HANDOFF_KERNEL_v1.0.0.md"
+    reported_state: "raw_candidate_with_verified_delta"
+    inspected_state: "UNKNOWN_NOT_MOUNTED"
+    allowed_transition: "preserve_as_raw_candidate"
+  - id: "iridiscenter-skill-manifest-v2"
+    declared_path: "handoff/raw-candidates/iridiscenter_skill_manifest_v2.yaml"
+    reported_state: "draft_pending_orchestrator_and_human_approval"
+    inspected_state: "UNKNOWN_NOT_MOUNTED"
+    allowed_transition: "review_only"
+
+gates:
+  approve_dry_run:
+    prior_state: "PENDING"
+    current_state: "AUTHORIZED_FOR_THIS_DELTA"
+    authorization_source: "USER_INSTRUCTION_2026-07-30"
+  domain_adapter_generation:
+    prior_state: "BLOCKED"
+    current_state: "GENERATED_PARTIAL_CANDIDATE"
+    remaining_blockers:
+      - "domain_adapter_contract_not_mounted"
+      - "0.3.0-rc1_package_not_mounted"
+      - "verification_records_not_mounted"
+  neutral_skills_array_commit: "BLOCKED"
+  mapa_de_voz_installation: "NOT_AUTHORIZED"
+  github_publication: "NOT_PUBLISHED"
+  runtime_deployment: "NOT_STARTED"
+
+verification_references:
+  - path: "registries/SOURCE_REGISTRY.yaml"
+    state: "UNKNOWN_NOT_MOUNTED"
+  - path: "registries/DECISION_LOG.md"
+    state: "UNKNOWN_NOT_MOUNTED"
+  - path: "registries/VERIFICATION_MATRIX.md"
+    state: "UNKNOWN_NOT_MOUNTED"
+  - path: "handoff/CLAUDE_RELEASE_DELTA.md"
+    state: "UNKNOWN_NOT_MOUNTED"
+
+source_boundaries:
+  inspected:
+    - id: "SRC-002"
+      artifact: "comet-vault-ui-handoff-v0.2.2-nidus-gem-container-request.zip"
+      role: "EVIDENCE"
+    - id: "SRC-003"
+      artifact: "iridiscenter_comet_vault_idea_nebula.md"
+      role: "EVIDENCE"
+    - id: "SRC-005"
+      artifact: "research-visualization.zip"
+      role: "STYLE_REFERENCE_ONLY"
+  instruction_only:
+    - id: "SRC-001"
+      artifact: "user-provided 0.3.0-rc1 handoff block"
+      role: "INSTRUCTION_AND_PROVISIONAL_RECORD"
+    - id: "SRC-004"
+      artifact: "user authorization"
+      role: "INSTRUCTION"
+  unavailable:
+    - id: "SRC-006"
+      artifact: "comet-vault-nebulas 0.3.0-rc1 package"
+      state: "UNKNOWN_NOT_MOUNTED"
+
+excluded:
+  - "raw ChatGPT implementation export"
+  - "private conversation URL"
+  - "personal email"
+  - "generated production domain_adapter.yaml"
+  - "build dependencies"
+  - "node_modules"
+
+review:
+  verdict: "PATCH_REQUIRED"
+  reasons:
+    - "The adapter is structurally coherent but its canonical contract is unavailable."
+    - "RC1 verification records and candidate-module bytes were not inspected."
+    - "Declared repository paths cannot be confirmed against an RC1 package."
+    - "Visual browser QA could not be completed in the available browser because local-file navigation is blocked."
+  next_atomic_action:
+    owner: "D · QA / MERGE / RELEASE"
+    action: "Review this partial adapter and require the RC1 package plus adapter contract before schema promotion."
+    completion_condition: "D issues ACCEPT, PATCH, or REJECT for this dry-run delta."

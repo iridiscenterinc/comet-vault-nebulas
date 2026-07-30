@@ -1,0 +1,140 @@
+cmp:
+  meta:
+    packet_id: "CMP-20260730-COMET-VAULT-DOMAIN-ADAPTER-DRY-RUN"
+    generated_at: "2026-07-30T00:00:00-06:00"
+    project: "comet-vault-nebulas"
+    mode: "NORMALIZE_REBUILD_COMMIT"
+    status: "DRAFT_FOR_APPROVAL"
+    destination: "D · QA / MERGE / RELEASE HANDOFF"
+  understanding:
+    need: "Normalize the 0.3.0-rc1 handoff and execute the explicitly authorized domain-adapter dry-run as a separate candidate delta."
+    outcome: "A traceable partial domain_adapter.yaml, QC review, and D handoff without mutating the baseline."
+    scope: "Dry-run generation and review only."
+    exclusions:
+      - "merge"
+      - "skill installation"
+      - "neutral skills array commit"
+      - "GitHub publication"
+      - "runtime deployment"
+      - "canon declaration"
+  state:
+    checkpoint: "0.3.0-rc1 reported as release_candidate; execution HOLD; package not mounted."
+    objective: "Produce a reviewable domain-adapter delta while preserving source and authority boundaries."
+    csf:
+      - "Baseline hash remains matched and untouched."
+      - "Adapter is separated from source packages."
+      - "Missing RC1 evidence remains UNKNOWN_NOT_MOUNTED."
+    okr: "UNKNOWN"
+    kpi: "UNKNOWN"
+    decisions:
+      - statement: "Dry-run domain-adapter generation authorized."
+        source_ids: ["SRC-004"]
+      - statement: "All merge, install, commit, publish, runtime, and canon actions remain unauthorized or blocked."
+        source_ids: ["SRC-001", "SRC-004"]
+    blockers:
+      - statement: "0.3.0-rc1 package is not mounted."
+        source_ids: ["SRC-006"]
+      - statement: "Domain-adapter schema/contract is not mounted."
+        source_ids: ["SRC-006"]
+      - statement: "Verification records are not mounted."
+        source_ids: ["SRC-001", "SRC-006"]
+  sources:
+    inspected:
+      - id: "SRC-002"
+        role: "EVIDENCE"
+        artifact: "comet-vault-ui-handoff-v0.2.2-nidus-gem-container-request.zip"
+        sha256: "ae20360198615cd57f75ab9a48614d97badfd212c3702b5fa1b62db1db855577"
+        proves: "The attached baseline bytes match the user-declared baseline hash."
+      - id: "SRC-003"
+        role: "EVIDENCE"
+        artifact: "iridiscenter_comet_vault_idea_nebula.md"
+        sha256: "e071a2994286e0143652f6320ffe05f0203b88c6b1eabee44db3bb5bc1d71b8d"
+        proves: "Level 1 orientation/holding purpose and non-activation rules."
+      - id: "SRC-001"
+        role: "INSTRUCTION_AND_PROVISIONAL_RECORD"
+        artifact: "User-provided 0.3.0-rc1 handoff block"
+        proves: "Requested scope, reported paths/states, gates, exclusions, and rollback intent."
+      - id: "SRC-004"
+        role: "INSTRUCTION"
+        artifact: "User authorization on 2026-07-30"
+        proves: "Authority to generate and review this dry-run delta."
+    unavailable:
+      - id: "SRC-006"
+        role: "UNKNOWN"
+        artifact: "comet-vault-nebulas 0.3.0-rc1 package and internal verification files"
+        state: "UNKNOWN_NOT_MOUNTED"
+    boundaries:
+      - "File presence and hashes prove only the observed artifacts."
+      - "The user handoff is authoritative for instruction, not physical verification of unmounted RC1 contents."
+      - "The candidate adapter is scaffold-only until its contract and RC1 evidence are inspected."
+  conflicts_unknown:
+    exact_duplicates: []
+    possible_duplicates: []
+    contradictions:
+      - statement: "The handoff reports an RC1 release candidate, but the RC1 package is unavailable for inspection."
+        source_ids: ["SRC-001", "SRC-006"]
+    drift:
+      - statement: "approve_dry_run changed from PENDING to AUTHORIZED_FOR_THIS_DELTA."
+        source_ids: ["SRC-001", "SRC-004"]
+    revoked: []
+    missing:
+      - statement: "0.3.0-rc1 package"
+        source_ids: ["SRC-006"]
+      - statement: "domain_adapter schema or accepted example"
+        source_ids: ["SRC-006"]
+      - statement: "verification registry, decision log, verification matrix, and release delta"
+        source_ids: ["SRC-001", "SRC-006"]
+    unknown:
+      - statement: "Schema compatibility of the generated adapter"
+        source_ids: ["SRC-006"]
+      - statement: "Physical contents and integrity of all RC1 candidate modules"
+        source_ids: ["SRC-006"]
+  routing:
+    owner_module: "D · QA / MERGE / RELEASE"
+    dependencies:
+      - "E · Capability Governance for adapter contract review"
+      - "C · Repository / Artifact Control for RC1 materialization"
+    rationale: "The immediate deliverable is a gate decision on a partial dry-run adapter with unresolved release evidence."
+    mutation_performed: false
+  safe_next_action:
+    action: "D reviews the separate partial adapter and requests the smallest missing RC1 evidence/contract patch."
+    executor: "D · QA / MERGE / RELEASE"
+    required_inputs:
+      - "domain_adapter.yaml"
+      - "DOMAIN_ADAPTER_DRY_RUN_REVIEW.md"
+      - "comet-vault-nebulas 0.3.0-rc1 package"
+      - "domain_adapter schema or accepted example"
+    approval_required: true
+    completion_condition: "D returns ACCEPT, PATCH, or REJECT for this delta."
+  handoff_prompt: |-
+    REHYDRATE FROM THIS CMP ONLY.
+    Role: D · QA / MERGE / RELEASE.
+    Scope: review the separate partial domain_adapter.yaml dry-run delta for comet-vault-nebulas 0.3.0-rc1.
+    Inputs: domain_adapter.yaml; DOMAIN_ADAPTER_DRY_RUN_REVIEW.md; SRC-001, SRC-002, SRC-003, SRC-004; attach SRC-006 when available.
+    Evidence boundaries: the v0.2.2 baseline hash and idea-nebula source were inspected; RC1 package, adapter contract, registries, and candidate modules were not mounted.
+    Task: issue ACCEPT, PATCH, or REJECT for the dry-run delta and identify the smallest required patch.
+    Do not: invent; assume shared context; promote raw logs or scaffold; merge; install skills; commit neutral arrays; publish; deploy; declare canon.
+    Deliver: D decision with artifact scope, evidence, blockers, and next atomic action.
+    Return to: D · QA / MERGE / RELEASE HANDOFF.
+  delta:
+    confirmed:
+      - statement: "The v0.2.2 attachment matches the declared SHA-256 baseline."
+        source_ids: ["SRC-002"]
+      - statement: "The idea-nebula source defines orientation/holding and non-activation."
+        source_ids: ["SRC-003"]
+    changed:
+      - statement: "approve_dry_run moved from PENDING to AUTHORIZED_FOR_THIS_DELTA."
+        source_ids: ["SRC-001", "SRC-004"]
+      - statement: "A partial scaffold-only domain adapter and QC review were generated as a separate delta."
+        source_ids: ["SRC-001", "SRC-004"]
+    blocked:
+      - statement: "Schema promotion, merge, commit, publication, and runtime remain blocked."
+        source_ids: ["SRC-001", "SRC-006"]
+    revoked: []
+    next:
+      - statement: "D review with RC1 package and domain-adapter contract."
+        source_ids: ["SRC-006"]
+  d_acceptance:
+    decision_status: "PENDING"
+    allowed_decisions: ["ACCEPT", "PATCH", "REJECT"]
+    canon_declared: false

@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/30563721/README.md)
 # Comet Vault Nebulas v0.3.0-rc1-proposal
 
 ## Control

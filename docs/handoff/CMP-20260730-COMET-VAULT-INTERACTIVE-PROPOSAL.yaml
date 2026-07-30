@@ -1,0 +1,162 @@
+cmp:
+  meta:
+    packet_id: "CMP-20260730-COMET-VAULT-INTERACTIVE-PROPOSAL"
+    generated_at: "2026-07-30T00:00:00-06:00"
+    project: "comet-vault-nebulas"
+    mode: "NORMALIZE_REBUILD_COMMIT"
+    status: "DRAFT_FOR_APPROVAL"
+    destination: "D · QA / MERGE / RELEASE HANDOFF"
+  understanding:
+    need: "Produce a unified interactive visualization proposal from the verified v0.2.2 baseline, Idea Nebula intent, RC1 handoff, dry-run authorization, and research-visualization aesthetics."
+    outcome: "A dependency-free v0.3.0-rc1 static candidate with preserved source, governance, rollback, and publication boundaries."
+    scope: "Interactive static proposal and separate dry-run adapter delta."
+    exclusions:
+      - "repository merge"
+      - "GitHub publication"
+      - "runtime deployment"
+      - "skill installation"
+      - "neutral skills array commit"
+      - "public projection activation"
+      - "canon declaration"
+  state:
+    checkpoint: "Interactive static candidate built from the verified v0.2.2 baseline; execution remains HOLD."
+    objective: "Make the Level 1 Comet Vault understandable and calming while keeping uncertainty and authority boundaries visible."
+    csf:
+      - "Nothing in the Idea Nebula is represented as active or a task."
+      - "Visual reference contributes aesthetics only."
+      - "Baseline is unchanged and rollback remains non-destructive."
+      - "Internal candidate cannot synchronize automatically to the public surface."
+    okr: "UNKNOWN"
+    kpi: "UNKNOWN"
+    decisions:
+      - statement: "Use research-visualization as an interactive aesthetic proposal."
+        source_ids: ["SRC-005", "SRC-007"]
+      - statement: "Keep the output static, bilingual, reversible, and in HOLD."
+        source_ids: ["SRC-001", "SRC-002", "SRC-007"]
+    blockers:
+      - statement: "The physical 0.3.0-rc1 package and verification records are not mounted."
+        source_ids: ["SRC-006"]
+      - statement: "GitHub app exposes no installed repository for comet-vault-nebulas."
+        source_ids: ["SRC-008"]
+      - statement: "Local visual browser QA is unavailable under browser URL policy."
+        source_ids: ["SRC-009"]
+  sources:
+    inspected:
+      - id: "SRC-001"
+        role: "INSTRUCTION_AND_PROVISIONAL_RECORD"
+        artifact: "User-provided 0.3.0-rc1 handoff block"
+        proves: "Requested state, gates, exclusions, rollback, and candidate paths."
+      - id: "SRC-002"
+        role: "EVIDENCE"
+        artifact: "comet-vault-ui-handoff-v0.2.2-nidus-gem-container-request.zip"
+        sha256: "ae20360198615cd57f75ab9a48614d97badfd212c3702b5fa1b62db1db855577"
+        proves: "Physical baseline bytes and rollback checkpoint."
+      - id: "SRC-003"
+        role: "EVIDENCE"
+        artifact: "iridiscenter_comet_vault_idea_nebula.md"
+        sha256: "e071a2994286e0143652f6320ffe05f0203b88c6b1eabee44db3bb5bc1d71b8d"
+        proves: "Level 1 orientation/holding purpose, clusters, and non-activation rules."
+      - id: "SRC-004"
+        role: "INSTRUCTION"
+        artifact: "User dry-run authorization"
+        proves: "Authority to generate and review a separate adapter delta."
+      - id: "SRC-005"
+        role: "STYLE_REFERENCE_ONLY"
+        artifact: "research-visualization.zip"
+        sha256: "efe2d402d6dcee2e1632b6708aad89db0744b2616e648bf4cf56084eeaaed7b4"
+        proves: "Observed source code patterns for composition and interaction only."
+      - id: "SRC-007"
+        role: "INSTRUCTION"
+        artifact: "User confirmation: proposal equals interactive visualization aesthetics"
+        proves: "Authority to build the separate interactive static proposal."
+      - id: "SRC-008"
+        role: "EVIDENCE"
+        artifact: "GitHub connector inspection"
+        proves: "Profile resolved; no installed account/repository was available."
+      - id: "SRC-009"
+        role: "EVIDENCE"
+        artifact: "Cloud browser policy response"
+        proves: "The browser could not navigate to the local file for visual QA."
+    unavailable:
+      - id: "SRC-006"
+        role: "UNKNOWN"
+        artifact: "Physical comet-vault-nebulas 0.3.0-rc1 package and verification records"
+        state: "UNKNOWN_NOT_MOUNTED"
+    boundaries:
+      - "AlphaQubit content, data, code, dependencies, and configuration were not integrated."
+      - "The visual proposal does not imply repository merge, D acceptance, publication, runtime, or canon."
+      - "Visual QA remains unverified; structural and functional static checks passed."
+  conflicts_unknown:
+    exact_duplicates:
+      - statement: "research-visualization.zip and research-visualization(1).zip have identical observed SHA-256 values."
+        source_ids: ["SRC-005"]
+    possible_duplicates: []
+    contradictions:
+      - statement: "RC1 is reported as a release candidate, but its physical package is unavailable for inspection."
+        source_ids: ["SRC-001", "SRC-006"]
+    drift:
+      - statement: "The v0.2.2 dark glass dashboard shell was rebuilt as an editorial orbital visualization proposal."
+        source_ids: ["SRC-002", "SRC-003", "SRC-005", "SRC-007"]
+    revoked: []
+    missing:
+      - statement: "Physical RC1 package, adapter contract, registries, decision log, matrix, and release delta"
+        source_ids: ["SRC-006"]
+      - statement: "Connected GitHub repository"
+        source_ids: ["SRC-008"]
+    unknown:
+      - statement: "Final visual fidelity across supported browsers and viewports"
+        source_ids: ["SRC-009"]
+      - statement: "Domain-adapter schema compatibility"
+        source_ids: ["SRC-006"]
+  routing:
+    owner_module: "D · QA / MERGE / RELEASE"
+    dependencies:
+      - "A · Production for visual patching after QA"
+      - "C · Repository / Artifact Control for RC1 materialization and GitHub destination"
+      - "E · Capability Governance for domain-adapter contract review"
+    rationale: "The candidate and adapter exist; the next atomic deliverable is a scoped D gate decision."
+    mutation_performed: false
+  safe_next_action:
+    action: "D reviews the interactive proposal and partial adapter, then issues ACCEPT, PATCH, or REJECT with the smallest evidence/visual patch."
+    executor: "D · QA / MERGE / RELEASE"
+    required_inputs:
+      - "comet-vault-nebulas_v0.3.0-rc1-proposal.zip"
+      - "physical 0.3.0-rc1 package"
+      - "domain-adapter schema or accepted example"
+      - "visual QA evidence from an allowed browser"
+    approval_required: true
+    completion_condition: "D returns a scoped decision; no implicit merge or publication occurs."
+  handoff_prompt: |-
+    REHYDRATE FROM THIS CMP ONLY.
+    Role: D · QA / MERGE / RELEASE.
+    Scope: review the dependency-free Comet Vault Nebulas v0.3.0-rc1 interactive proposal and its separate partial domain-adapter dry-run.
+    Inputs: candidate ZIP; SRC-001 through SRC-009; attach SRC-006 and the accepted adapter contract when available.
+    Evidence boundaries: v0.2.2 baseline, Idea Nebula, and visual-reference source were inspected; physical RC1 package and verification records were not mounted; visual browser QA is unverified.
+    Task: issue ACCEPT, PATCH, or REJECT for the proposal and adapter as separately scoped deltas.
+    Do not: invent; assume shared context; merge; install skills; publish; deploy; activate public projection; declare canon.
+    Deliver: D decision, exact artifact scope, evidence, blockers, smallest patch, and next atomic action.
+    Return to: D · QA / MERGE / RELEASE HANDOFF.
+  delta:
+    confirmed:
+      - statement: "The v0.2.2 attachment matches the declared baseline hash."
+        source_ids: ["SRC-002"]
+      - statement: "The Idea Nebula establishes Level 1 orientation/holding and non-activation."
+        source_ids: ["SRC-003"]
+      - statement: "The proposal remains static, dependency-free, bilingual, and separate from the baseline."
+        source_ids: ["SRC-002", "SRC-003", "SRC-005", "SRC-007"]
+    changed:
+      - statement: "A unified interactive static proposal and portable D handoff were produced."
+        source_ids: ["SRC-007"]
+      - statement: "research-visualization was registered as style reference only."
+        source_ids: ["SRC-005", "SRC-007"]
+    blocked:
+      - statement: "Visual browser QA, schema promotion, repository merge, publication, and runtime remain blocked."
+        source_ids: ["SRC-006", "SRC-008", "SRC-009"]
+    revoked: []
+    next:
+      - statement: "D review after RC1 materialization, adapter-contract provision, and allowed visual QA."
+        source_ids: ["SRC-006", "SRC-009"]
+  d_acceptance:
+    decision_status: "PENDING"
+    allowed_decisions: ["ACCEPT", "PATCH", "REJECT"]
+    canon_declared: false
